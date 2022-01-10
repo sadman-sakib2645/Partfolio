@@ -1,0 +1,630 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    vertical-align: middle;
+}
+
+.conteinar{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+/* =================================
+    common css done
+================================= */
+:root{
+    --mainfont: 'Open Sans', sans-serif;
+    --subfont: 'Abril Fatface', cursive;
+    --brand: #d6c6b2 ;
+    --banner-hcol: #e7f0f3 ;
+    --hcol: #222222 ;
+    --pcol: #444444;
+    --blog-bg: #dddddd;
+}
+.brand{
+    background-color: var(--brand);
+}
+.ban-bg{
+    background-color: var(--banner-hcol);
+}
+
+.hcol{
+    color: var(--hcol);
+}
+
+.pcol{
+    color: var(--pcol);
+}
+
+.blog-bg{
+    background-color: var(--blog-bg);
+}
+.open-light{
+    font-family: var(--mainfont);
+    font-weight: 300;
+}
+.open-reg{
+    font-family: var(--mainfont);
+    font-weight: 400;
+}
+.open-med{
+    font-family: var(--mainfont);
+    font-weight: 500;
+}
+.open-semi{
+    font-family: var(--mainfont);
+    font-weight: 600;
+}
+.open-bold{
+    font-family: var(--mainfont);
+    font-weight: 700;
+}
+.open-extra{
+    font-family: var(--mainfont);
+    font-weight: 800;
+}
+.abril-reg{
+    font-family: var(--subfont);
+    font-weight: 400;
+}
+.text-cen{
+    text-align: center;
+}
+.text-upper{
+    text-transform: uppercase;
+}
+.text-cap{
+    text-transform: capitalize;
+}
+
+.fs20{
+    font-size: 20px;
+}
+.fs102{
+    font-size: 102px;
+}
+.fs16{
+    font-size: 16px;
+}
+.fs32{
+    font-size: 32px;
+}
+.fs14{
+    font-size: 14px;
+}
+.fs24{
+    font-size: 24px;
+}
+
+.fs20{
+    font-size: 20px;
+}
+.fs22{
+    font-size: 22px;
+}
+.fs75{
+    font-size: 75px;
+}
+
+.mt100{
+    margin-top: 100px;
+}
+.mt115{
+    margin-top: 115px;
+}
+.mb100{
+    margin-bottom: 100px;
+}
+.ln24{
+    line-height: 24px;
+}
+
+.fs85{
+   font-size: 85px;
+}
+/* ===================== Typhography ends ===================== */
+
+/* ===================== Typhography ends ===================== */
+
+#navlist{
+    height: 110px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+#navlist .nav{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#navlist .nav .logo{
+    height: 100%;
+    width: 180px;
+}
+#navlist .nav .logo a img{
+    width: 100%;
+    margin-top: 30px;
+}
+#navlist .nav .menu{
+    height: 100%;
+    width: 652px;
+}
+#navlist .nav .menu ul{
+    display: flex;
+}
+#navlist .nav .menu ul li{
+    margin-right: 41px;
+}
+
+
+#navlist .nav .menu ul li a{
+    color: var(--hcol);
+    padding-left: 10px;
+    padding-right: 10px;
+    display:block;
+    white-space: nowrap;
+    padding-top: 60px;
+    padding-bottom: 10px;
+    position: relative;
+    z-index: 11;
+}
+#navlist .nav .menu ul li a::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    background: var(--brand);
+    z-index: -1;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
+}
+#navlist .nav .menu ul li:hover a::after{
+    top: 0;
+}
+
+/* =================== nav css ends =================== */
+
+/* =================== nav css ends =================== */
+#banner{
+    height: 620px;
+    background: var(--banner-hcol);
+    position: relative;
+}
+#banner .banner{
+    height: 100%;
+    display: flex;
+    position: relative;
+}
+#banner .banner #ban-btn{
+    width: 300px;
+    height: 42px;
+    position: absolute;
+    bottom: 90px;
+    right: 160px;
+    z-index: 9999;
+    display: flex;
+    justify-content: space-between;
+}
+#banner .banner #ban-btn .ban-button{
+    width: 136px;
+    height: 42px;
+    box-sizing: border-box;
+    border: 1px solid #d6c6b2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
+}
+#banner .banner #ban-btn .ban-button:hover{
+    background:var(--brand) ;
+}
+
+#banner .banner #ban-btn .ban-button a{
+    color: #d6c6b2;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
+}
+
+
+
+#banner .banner #ban-btn .ban-button:hover a{
+    color: var(--hcol);
+}
+
+
+/* #banner .banner .ban-button a{
+    color:#d6c6b2 ;
+} */
+#banner .banner .ban-img{
+    /* width: 647px; */
+    position: absolute;
+    top: 0;
+    left: 100px;
+    z-index: 99;
+}
+#banner .banner .ban-img img{
+    width: 100%;
+}
+/* #banner .banner .ban-txt{
+    width: 430px;
+    height: 100%;
+    background: rgb(117, 26, 26);
+} */
+/* #banner .banner .ban-txt h5{
+    margin-top: 230px;
+    margin-left: 40px;
+} */
+#banner .banner .ban-txt h5{
+    position: absolute;
+    top: 240px;
+    left: 785px;
+    
+}
+
+#banner .banner .ban-txt h1{
+    position: absolute;
+    top: 270px;
+    left: 650px;
+    z-index: 999;
+    color:var(--hcol);
+    
+}
+/* #banner .banner .ban-txt h1 span{
+    margin-top: 11px;
+    position: absolute;
+    top: 30px;
+    left:-65px ;
+    z-index: 999;
+    
+} */
+#banner .banner .ban-txt h1 .typed-cursor{
+    color: #222222d5;
+}
+
+#particles-js{
+    width: 100%;
+    height: 100%;
+    background-image: url('');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+  /* =================== banner css ends =================== */
+
+/* =================== banner css ends =================== */
+#about{
+    height: 520px;
+    margin: 100px 0;
+}
+
+#about .about{
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+}
+#about .about .about-img{
+    width: 470px;
+    height: 100%;
+   
+}
+#about .about .about-txt{
+    width: 670px;
+    height: 100%;
+}
+#about .about .about-txt h4{
+    margin: 14px 0 40px 0;
+}
+#about .about .about-txt p{
+    line-height: 24px;
+    margin-bottom: 30px;
+}
+#about .about .about-txt span{
+    line-height: 24px;
+    
+}
+
+#about .about .about-txt .about-btn{
+    width: 330px;
+    height: 100px;
+    margin-top: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
+}
+#about .about .about-txt:hover .about-btn{
+    box-shadow: 2px 0px 5px 2px rgb(182, 171, 171);
+}
+
+#about .about .about-txt .about-btn ul li{
+    width: 50px;
+    height: 50px;
+    border: 2px solid #222;
+    /*box-sizing: border-box;
+    */border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
+}
+
+#about .about .about-txt .about-btn ul li:hover{
+    border-color: var(--brand);
+}
+
+
+#about .about .about-txt .about-btn ul{
+    display: flex;
+    justify-content: space-between;
+}
+#about .about .about-txt .about-btn ul li a{
+    font-size: 24px;
+    height: 50px;
+    color: var(--hcol);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
+}
+
+#about .about .about-txt .about-btn ul li a:hover{
+    background: var(--brand);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+
+
+  /* =================== about css ends =================== */
+
+/* =================== about css ends =================== */
+
+.service-bg{
+    height: 550px;
+    margin-bottom: 100px;
+    background: var(--banner-hcol);
+}
+
+.service-bg .service{
+    height: 100%;
+}
+.service-bg .service .service-head{
+    height: 140px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-bg .service .service-slider{
+    height: 410px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.service-bg .service .service-slider .ser-item{
+    width: 370px;
+    height: 300px;
+    text-align: center;
+}
+.service-bg .service .service-slider .ser-item img{
+   
+    margin: 0 auto;
+}
+.service-bg .service .service-slider .ser-item h5{
+    margin: 30px 0 35px 0;
+}
+
+.service-bg .service .service-slider .ser-item p{
+    padding:0 5px;
+    
+}
+.sr{
+    width: 100px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-top: -80px;
+}
+.sr .button-sr:hover{
+    background: var(--brand);
+}
+
+.button-sr{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.603);
+    box-sizing: border-box;
+    transition: all linear .2s;
+    -webkit-transition: all linear .2s;
+    -moz-transition: all linear .2s;
+    -ms-transition: all linear .2s;
+    -o-transition: all linear .2s;
+    position: relative;
+}
+.left-icon{
+    font-size: 30px;
+    position: absolute;
+    top: 335px;
+    left: 525px;
+    z-index: 55;
+}
+.right-icon{
+    font-size: 30px;
+    position: absolute;
+    top: 335px;
+    left: 620px;
+    z-index: 55;
+}
+
+/* ================== service css ends =================== */
+
+/* =================== service css ends =================== */
+
+#portfolio-bg{
+    height: 1050px;
+}
+#portfolio-bg .portfolio{
+    height: 100%;
+    display: flex;
+    position: relative;
+}
+#portfolio-bg .portfolio .port-img{
+    width: 770px;
+    height: 1050px;
+    margin-left: 100px;
+    margin-right: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#portfolio-bg .portfolio .port-img .port-item{
+    width: 370px;
+    height: 450px;
+    position: relative;
+    z-index: 33;
+
+}
+.aa{
+    margin-bottom: 90px;
+}
+#portfolio-bg .portfolio .port-img .port-item .overlay{
+    width: 100%;
+    height: 0%;
+    background: rgba(214, 198, 178, 0.85)  ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    text-align: center;
+    opacity: 0;
+    transition: all linear .5s;
+    -webkit-transition: all linear .5s;
+    -moz-transition: all linear .5s;
+    -ms-transition: all linear .5s;
+    -o-transition: all linear .5s;
+}
+#portfolio-bg .portfolio .port-img .port-item:hover .overlay{
+    opacity: 1;
+    height: 100%;
+}
+
+#portfolio-bg .portfolio .port-img .port-item .overlay .icon a i{
+    color: wheat;
+    width: 50px;
+    height: 50px;
+    background:var(--pcol);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    line-height: 50px;
+    text-align: center;
+    margin-top: 200px;
+    margin-bottom: 120px;
+}
+
+#portfolio-bg .portfolio .port-txt{
+    width: 200px;
+    height: 470px;
+    margin-right: 70px;
+}
+#portfolio-bg .portfolio .port-txt h4{
+    margin-bottom: 50px;
+}
+#portfolio-bg .port-btn{
+    width: 138px;
+    height: 42px;
+    background: rgb(214, 198, 178)  ;
+}
+#portfolio-bg .portfolio .port-txt ul li{
+    margin-bottom: 40px;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
+    cursor: pointer;
+}
+#portfolio-bg .portfolio .port-txt ul li:hover{
+    color: var(--brand);
+    padding-left: 20px;
+}
+.browse{
+    width: 130px;
+    height: 40px;
+    transition:all linear .4s ;
+    -webkit-transition:all linear .4s ;
+    -moz-transition:all linear .4s ;
+    -ms-transition:all linear .4s ;
+    -o-transition:all linear .4s ;
+    position: absolute;
+    bottom: 0;
+    left: 35%;
+}
+.browse h4{
+    line-height: 40px;
+    /* text-align: center; */
+    margin-right: 20px;
+}
+.browse:hover{
+    background: var(--brand);
+}
+/* ===================  Portfolio  css ends ================*/
+
+/* ===================  Portfolio  css ends ================*/
+

@@ -32,5 +32,12 @@ $(document).ready(function(){
             spinner:"wave",
             spinColor: "black"
         });
+
+        $('.test-slider').slick({
+            slidesToShow:2,
+            autoplay:true,
+            prevArrow:'<i class="fas fa-long-arrow-alt-left white icon1"></i>',
+            nextArrow:'<i class="fas fa-long-arrow-alt-right white icon2"></i>',
+        });
     
 });

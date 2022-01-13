@@ -106,6 +106,9 @@ img{
 .fs24{
     font-size: 24px;
 }
+.fs60{
+    font-size: 60px;
+}
 
 .fs20{
     font-size: 20px;
@@ -132,6 +135,21 @@ img{
 
 .fs85{
    font-size: 85px;
+}
+.white{
+    color: white;
+}
+.ln127{
+    line-height: 127px;
+}
+.txt-lf{
+    text-align: left;
+}
+.pt100{
+    padding-top: 100px;
+}
+.ln150{
+    line-height: 150px;
 }
 /* ===================== Typhography ends ===================== */
 
@@ -627,4 +645,200 @@ img{
 /* ===================  Portfolio  css ends ================*/
 
 /* ===================  Portfolio  css ends ================*/
+.test-bg{
+    height: 500px;
+    background:url(../images/test.png) no-repeat center /cover;
+    margin-top: 100px;
+    position: relative;
+    z-index: 1;
+    background-attachment: fixed;
+}
+.test-bg::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.70);
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+
+.test-bg .test{
+    height: 100%;
+}
+.test-bg .test .test-head{
+    height: 135px;
+}
+/* .test-bg .test .test-slider{
+    height: 227px;
+    background: rgb(8, 153, 63);
+} */
+.test-bg .test .test-slider .item{
+    height: 227px;
+    width: 570px;
+    display: flex;
+    position: relative;
+}
+.test-bg .test .test-slider .item .img{
+    height: 100%;
+    width: 171px;
+    margin-right: 30px;
+}
+.test-bg .test .test-slider .item .txt{
+    height: 100%;
+    width: 370px;
+    position: absolute;
+    right: 20px;
+    top: 0;
+}
+.test-bg .test .test-slider .item .txt .star{
+    margin: 10px 0 20px 0;
+}
+
+.test-bg .test .test-slider .item .txt .star ul{
+    display: flex;
+}
+.test-bg .test .test-slider .item .txt h6{
+    padding-right: 8px;
+}
+.jani-na{
+    display: flex;
+    width: 80px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.jani-na .round{
+    width: 30px;
+    height: 30px;
+    border: 1px solid #d6c6b2;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
+}
+.jani-na .round:hover{
+    background:var(--brand) ;
+}
+
+.icon1{
+    position: absolute;
+    top: 234px;
+    left: 532px;
+    font-size: 30px;
+}
+.icon2{
+    position: absolute;
+    top: 234px;
+    left: 610px;
+    font-size: 30px;
+}
+/* ===================  Testimonial  css ends ================*/
+
+/* ===================  Testimonial  css ends ================*/
+.price{
+    height: 740px;
+    margin-bottom: 100px;
+}
+.price .price-bg{
+    height: 740px;
+    
+}
+.price .price-bg .price-head{
+    height: 180px;
+}
+.price .price-bg .price-bottom{
+    height: 560px;
+    display: flex;
+    justify-content: space-between;
+}
+.price .price-bg .price-bottom .p-item{
+    width: 370px;
+    height: 560px;
+    background: #f1f1f1;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
+}
+.price .price-bg .price-bottom .p-item:hover h6{
+    background: var(--brand);
+    box-shadow: 0px 0px 2px 0px #222;
+}
+.price .price-bg .price-bottom .p-item:hover{
+    background: var(--brand);
+}
+.price .price-bg .price-bottom .p-item img{
+    margin: 20px 0;
+}
+.price .price-bg .price-bottom .p-item h6{
+    line-height: 60px;
+    text-align: center;
+    background: #dddddd;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
+}
+.price .price-bg .price-bottom .p-item ul li{
+    margin: 25px 0;
+}
+
+.price .price-bg .price-bottom .p-item .button{
+    width: 170px;
+    height: 45px;
+    margin: 0 auto;
+    line-height: 40px;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
+}
+.price .price-bg .price-bottom .p-item:hover .button{
+    background:var(--brand) ;
+    border-color: var(--brand);
+    box-shadow: 0px 0px 3px 1px rgba(34, 28, 28, 0.63);
+}
+
+/* ===================  Pricing  css ends ================*/
+
+/* ===================  Pricing  css ends ================*/
+.blog-bg{
+    height: 810px;
+    background:var(--banner-hcol) ;
+}
+.blog-bg .blog{
+    height: 810px;
+    background: #000;
+}
+.blog-bg .blog .head{
+    height: 150px;
+    background: rgb(172, 126, 126);
+}
+.blog-bg .blog .button{
+    height: 660px;
+    background: rgb(172, 15, 15);
+}
+
+.blog-bg .blog .button .item{
+    width: 670px;
+    height: 315px;
+    background: rgb(170, 145, 145);
+}
+
+
+
+/* ===================  Blog  css ends ================*/
+
+/* ===================  Blog  css ends ================*/
 
